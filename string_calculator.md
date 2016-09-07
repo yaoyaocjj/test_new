@@ -50,4 +50,4 @@ input '[***]\n1***2***3', return 6
 sum when user specify multi delimiters with one character in the formart of [delimiter][delimiter]
 input '[*][%]\n2*5%1', return 8
 sum when user specify multi delimiters with any length
-input '[***][;][,]\n2;2***5,1 return 10
+input '[***][;][,]\n2;2***5,1 return 10.
