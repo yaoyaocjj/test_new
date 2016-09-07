@@ -34,43 +34,55 @@ make sure you can also handle multiple delimiters with length longer than one ch
 Tasks:
 
 calculate empty string:
+
 input "", return 0
 input null, return 0
 
 calculate 1 number string
+
 input "1", return 1;
 input "123", return 123;
 
 calculate 2 numbers string
+
 input "1,2", return 3
 input "123,1", return 124
 
 calculate more than 2 numbers string
+
 input "0,1,456", return 457
 
 calculate when numbers can be split by , or newLines
+
 input "0\n89", return 89
 input "0\n89,1", return 89
 
 calculate when user specify the delimiter
+
 input ";\n0;1;1", return 2
 
 showErrorMessage When There Are One Negative Number
+
 input "-1,1", throw an exception "negatives not allowed - -1"
 
 showErrorMessage when there are more than one negative number
+
 input "-1,-1", throw an exception "negatives not allowed - -1,-1"
 input "-1,2,-1" throw an exception "negatives not allowed - -1,-1"
 
 number higher than 1000 should be ignored
+
 input '1,1000', return 1000
 input '1,1001',return 1
 
 sum when user specify delimiters with any length in the format [delimiter]
+
 input '[***]\n1***2***3', return 6
 
 sum when user specify multi delimiters with one character in the formart of [delimiter][delimiter]
+
 input '[*][%]\n2*5%1', return 8
 
 sum when user specify multi delimiters with any length
+
 input '[***][;][,]\n2;2***5,1 return 10
